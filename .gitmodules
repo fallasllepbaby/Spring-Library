@@ -1,0 +1,15 @@
+[submodule "Api-Gateway"]
+	path = Api-Gateway
+	url = ./Api-Gateway
+[submodule "Book-Service"]
+	path = Book-Service
+	url = ./Book-Service
+[submodule "Eureka-Server"]
+	path = Eureka-Server
+	url = ./Eureka-Server
+[submodule "Library-Service"]
+	path = Library-Service
+	url = ./Library-Service
+[submodule "Security-Service"]
+	path = Security-Service
+	url = ./Security-Service

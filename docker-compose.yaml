@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  eureka-server:
+    build: ./Eureka-Server
+    ports:
+      - 8761:8761
+
+  security-service:
+    build: ./Security-Service
+    depends_on:
+      - eureka-server
+      - user-db
+    environment:
+      SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://eureka-server:8761/eureka"}}}}'
+      SPRING_DATASOURCE_URL: jdbc:postgresql://user-db:5432/user
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - 8083:8083
+
+  book-service:
+    build: ./Book-Service
+    depends_on:
+      - eureka-server
+      - security-service
+      - book-db
+    environment:
+      SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://eureka-server:8761/eureka"}}}}'
+      SPRING_DATASOURCE_URL: jdbc:postgresql://book-db:5432/book
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - 8081:8081
+
+  library-service:
+    build: ./Library-Service
+    depends_on:
+      - eureka-server
+      - security-service
+      - book-record-db
+    environment:
+      SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://eureka-server:8761/eureka"}}}}'
+      SPRING_DATASOURCE_URL: jdbc:postgresql://book-record-db:5432/book-record
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - 8082:8082
+
+  api-gateway:
+    build: ./Api-Gateway
+    depends_on:
+      - eureka-server
+      - security-service
+      - book-service
+      - library-service
+    environment:
+      SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://eureka-server:8761/eureka"}}}}'
+    ports:
+      - 8765:8765
+
+  user-db:
+    image: postgres:latest
+    container_name: user-db
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_DB: user
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+
+  book-db:
+    image: postgres:latest
+    container_name: book-db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: book
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+
+  book-record-db:
+    image: postgres:latest
+    container_name: book-record-db
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: book-record
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
