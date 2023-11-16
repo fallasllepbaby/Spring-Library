@@ -12,4 +12,6 @@ public interface BookRecordRepository extends JpaRepository<BookRecord, Long> {
     List<BookRecord> findByDateTheBookWasTakenIsNull();
 
     Optional<BookRecord> findByBookId(Long bookId);
+
+    void deleteBookRecordByBookId(Long bookId);
 }

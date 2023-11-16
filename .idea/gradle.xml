@@ -27,6 +27,11 @@
                   <project path="$PROJECT_DIR$/Library-Service" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/Security-Service" name="Security-Service">
+                <projects>
+                  <project path="$PROJECT_DIR$/Security-Service" />
+                </projects>
+              </build>
             </builds>
           </compositeBuild>
         </compositeConfiguration>
@@ -39,6 +44,7 @@
             <option value="$PROJECT_DIR$/Book-Service" />
             <option value="$PROJECT_DIR$/Eureka-Server" />
             <option value="$PROJECT_DIR$/Library-Service" />
+            <option value="$PROJECT_DIR$/Security-Service" />
           </set>
         </option>
       </GradleProjectSettings>

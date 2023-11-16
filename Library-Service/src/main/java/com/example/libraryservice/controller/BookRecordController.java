@@ -1,6 +1,7 @@
 package com.example.libraryservice.controller;
 
 import com.example.libraryservice.entity.BookRecord;
+import com.example.libraryservice.exception.ResourceNotFoundException;
 import com.example.libraryservice.service.BookRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/v1/bookrecords")
@@ -44,5 +46,14 @@ public class BookRecordController {
             BookRecord newBookRecord = bookRecordService.store(bookRecord);
             return new ResponseEntity<>(newBookRecord, HttpStatus.CREATED);
         });
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<BookRecord> delete(@PathVariable("id") Long id) {
+        Optional<BookRecord> bookRecordToDelete = bookRecordService.findByBookId(id);
+        if (!bookRecordToDelete.isPresent())
+            throw new ResourceNotFoundException("There isn't book record with book id : " + id);
+        bookRecordService.delete(id);
+        return new ResponseEntity<>(bookRecordToDelete.get(), HttpStatus.NO_CONTENT);
     }
 }

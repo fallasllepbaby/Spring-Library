@@ -81,11 +81,13 @@ public class BookController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Book> delete(@PathVariable("id") Long id) {
+    public ResponseEntity<Book> delete(@PathVariable Long id) {
         Optional<Book> bookToDelete = bookService.findById(id);
         if (!bookToDelete.isPresent())
             throw new ResourceNotFoundException("There isn't book with id : " + id);
+        feignUtil.delete(id);
         bookService.delete(id);
+
         return new ResponseEntity<>(bookToDelete.get(), HttpStatus.NO_CONTENT);
     }
 

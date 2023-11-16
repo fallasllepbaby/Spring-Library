@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="book@localhost" uuid="890479c3-0cba-431a-aa6a-044f755ce1fc">
+    <data-source source="LOCAL" name="book-record@localhost" uuid="5277f9ba-0f41-4c27-bfd2-3250883f6388">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/book</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5434/book-record</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="book-record@localhost" uuid="d06362e1-aae8-49ba-bbc9-55989f9e5927">
+    <data-source source="LOCAL" name="book@localhost" uuid="5927494b-2e91-4ea8-b122-d6b67939b206">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/book-record</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5433/book</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="user@localhost" uuid="fb2828a7-10ba-4a05-b72c-220c26bc1f7e">
+    <data-source source="LOCAL" name="user@localhost" uuid="552d7c36-1c1b-448c-93c9-e546b9468e34">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/user</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5431/user</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

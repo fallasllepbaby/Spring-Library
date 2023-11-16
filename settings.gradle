@@ -4,4 +4,5 @@ includeBuild 'Eureka-Server'
 includeBuild 'Book-Service'
 includeBuild 'Api-Gateway'
 includeBuild 'Library-Service'
+includeBuild 'Security-Service'
 
