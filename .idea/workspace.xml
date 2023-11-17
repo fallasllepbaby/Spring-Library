@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31fcb0fb-a668-48a2-8095-bf65c7a97849" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/BookServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/LibraryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/LibraryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/controller/BookRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/controller/BookRecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/service/BookRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/service/BookRecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Security-Service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security-Service/src/main/java/com/example/securityservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security-Service/src/main/java/com/example/securityservice/controller/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +293,7 @@
       <workItem from="1700218311054" duration="3197000" />
       <workItem from="1700228310568" duration="3418000" />
       <workItem from="1700232724623" duration="4984000" />
-      <workItem from="1700246409548" duration="1462000" />
+      <workItem from="1700246409548" duration="3593000" />
     </task>
     <task id="LOCAL-00001" summary="add: Eureka-Server">
       <option name="closed" value="true" />
