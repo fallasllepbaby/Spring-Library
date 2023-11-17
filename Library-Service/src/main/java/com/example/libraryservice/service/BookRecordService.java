@@ -2,6 +2,7 @@ package com.example.libraryservice.service;
 
 
 import com.example.libraryservice.entity.BookRecord;
+import com.example.libraryservice.exception.ResourceNotFoundException;
 import com.example.libraryservice.repository.BookRecordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,8 @@ public class BookRecordService {
     }
 
     public Optional<BookRecord> findByBookId(Long bookId) {
+        if (!bookRecordRepository.findByBookId(bookId).isPresent())
+            throw new ResourceNotFoundException("There isn't book record with book id : " + bookId);
         return bookRecordRepository.findByBookId(bookId);
     }
 

@@ -2,6 +2,7 @@ package com.example.bookservice.service;
 
 import com.example.bookservice.entity.Book;
 import com.example.bookservice.exception.AlreadyExistException;
+import com.example.bookservice.exception.ResourceNotFoundException;
 import com.example.bookservice.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,10 +26,16 @@ public class BookService {
     }
 
     public Optional<Book> findById(Long id) {
+        if (!bookRepository.findById(id).isPresent()) {
+            throw new ResourceNotFoundException("There isn't book with id : " + id);
+        }
         return bookRepository.findById(id);
     }
 
     public Optional<Book> findByIsbn(String isbn) {
+        if (!bookRepository.findByISBN(isbn).isPresent()) {
+            throw new ResourceNotFoundException("There isn't book with ISBN: " + isbn);
+        }
         return bookRepository.findByISBN(isbn);
     }
 
