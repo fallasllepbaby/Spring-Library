@@ -5,6 +5,7 @@ import com.example.libraryservice.entity.BookRecord;
 import com.example.libraryservice.repository.BookRecordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,6 +25,7 @@ public class BookRecordService {
         return bookRecordRepository.save(bookRecord);
     }
 
+    @Transactional
     public BookRecord store(BookRecord bookRecord) {
         BookRecord saveBookRecord = bookRecordRepository.save(bookRecord);
         return saveBookRecord;
@@ -39,6 +41,7 @@ public class BookRecordService {
         return bookRecordRepository.findByBookId(bookId);
     }
 
+    @Transactional
     public void delete(Long id) {
         bookRecordRepository.deleteBookRecordByBookId(id);
     }

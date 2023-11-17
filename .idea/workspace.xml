@@ -5,37 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31fcb0fb-a668-48a2-8095-bf65c7a97849" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/890479c3-0cba-431a-aa6a-044f755ce1fc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/890479c3-0cba-431a-aa6a-044f755ce1fc/storage_v2/_src_/database/book.6TouAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/890479c3-0cba-431a-aa6a-044f755ce1fc/storage_v2/_src_/database/book.6TouAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/890479c3-0cba-431a-aa6a-044f755ce1fc/storage_v2/_src_/database/book.6TouAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/890479c3-0cba-431a-aa6a-044f755ce1fc/storage_v2/_src_/database/book.6TouAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d06362e1-aae8-49ba-bbc9-55989f9e5927.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d06362e1-aae8-49ba-bbc9-55989f9e5927/storage_v2/_src_/database/book-record.tTPttA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d06362e1-aae8-49ba-bbc9-55989f9e5927/storage_v2/_src_/database/book-record.tTPttA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d06362e1-aae8-49ba-bbc9-55989f9e5927/storage_v2/_src_/database/book-record.tTPttA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d06362e1-aae8-49ba-bbc9-55989f9e5927/storage_v2/_src_/database/book-record.tTPttA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2828a7-10ba-4a05-b72c-220c26bc1f7e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2828a7-10ba-4a05-b72c-220c26bc1f7e/storage_v2/_src_/database/user.y-s2AA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2828a7-10ba-4a05-b72c-220c26bc1f7e/storage_v2/_src_/database/user.y-s2AA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2828a7-10ba-4a05-b72c-220c26bc1f7e/storage_v2/_src_/database/user.y-s2AA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2828a7-10ba-4a05-b72c-220c26bc1f7e/storage_v2/_src_/database/user.y-s2AA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/util/FeignUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/src/main/java/com/example/bookservice/util/FeignUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Book-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Book-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/controller/BookRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/controller/BookRecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/repository/BookRecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/repository/BookRecordRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/service/BookRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/java/com/example/libraryservice/service/BookRecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +292,8 @@
       <workItem from="1700074011002" duration="1882000" />
       <workItem from="1700080512603" duration="2831000" />
       <workItem from="1700143217581" duration="6404000" />
-      <workItem from="1700162749868" duration="2213000" />
+      <workItem from="1700162749868" duration="6145000" />
+      <workItem from="1700218311054" duration="978000" />
     </task>
     <task id="LOCAL-00001" summary="add: Eureka-Server">
       <option name="closed" value="true" />
